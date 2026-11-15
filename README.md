@@ -2,11 +2,13 @@
 
 ## About the Project
 
-Our goal is to build an AI-powered tool that helps investors better understand their investment choices based on their financial goals, risk tolerance, and personal preferences.
+AlphaForge AI is an explainable investment screening prototype.
 
-Different investors have different needs. An investment that works for someone looking for long-term growth may not be suitable for someone who wants to protect their savings.
+Our project focuses on Mateo, an investor with moderate risk tolerance, an 8–12-year investment horizon, and ESG preferences.
 
-We want our tool to consider these differences and explain its analysis using financial data, rather than simply recommending investments based on past returns.
+The tool combines historical market data with publicly documented ESG information to help users understand company-level financial risks and potential ESG concerns.
+
+Rather than simply recommending investments, it provides a screening result with supporting evidence, explanations, and suggested next steps.
 
 ## Our Approach
 
@@ -53,20 +55,24 @@ These ETFs allow us to compare different types of investments and study the rela
 
 ## Getting Started
 
+Requires Python 3.10 or later.
+
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Amandaily-xx/alphaforge-ai.git
    cd alphaforge-ai
    ```
 
-2. **Install the required libraries**
+2. **Run the application**
    ```bash
-   pip install -r requirements.txt
+   python agent.py --data data
    ```
 
-3. **Run the project**
+3. **Open the demo**
 
-   Open `analysis/financial_eda.ipynb` in Jupyter Notebook or VS Code to view and run the financial analysis. Open `index.html` in a browser to view the demo interface.
+   Visit http://127.0.0.1:8765 in your browser.
+
+For the financial analysis notebook, install `pandas`, `numpy`, `matplotlib`, and `jupyter` separately.
 
 ## Initial Findings
 
@@ -80,14 +86,13 @@ These results show why investment decisions should not be based on returns alone
 
 We are continuing to explore how combining different assets may help balance growth and risk.
 
-## Tools
+## Technologies Used
 
-- Python
-- pandas and NumPy
-- Matplotlib
-- Jupyter Notebook
-- GitHub
-- AWS (planned integration)
+- **Python:** Financial calculations, data processing, and screening logic
+- **pandas, NumPy, Matplotlib:** Exploratory data analysis and visualization
+- **HTML, CSS, JavaScript:** Interactive demo interface
+- **JSON:** ESG evidence and supporting records
+- **GitHub:** Code sharing and team collaboration
 
 ## Limitations
 
