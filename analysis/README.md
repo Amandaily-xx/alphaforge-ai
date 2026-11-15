@@ -30,8 +30,6 @@ Using Python, pandas, NumPy, and Matplotlib, we calculated:
 - Maximum drawdown
 - Correlations between daily ETF returns
 
-We also compared hypothetical portfolios with different allocations between ESGV and AGG.
-
 ## Main Findings
 
 **1. Higher returns came with higher risk in our sample.**
