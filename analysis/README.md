@@ -4,68 +4,52 @@ This folder contains our initial financial analysis for the AlphaForge AI projec
 
 ## Objective
 
-We explored the historical performance and risk of different ETFs to better understand how investment choices may fit different investor profiles.
+We explored historical ETF performance and risk to better understand how different investments may fit different investor profiles.
 
 Our initial focus is Mateo, who wants to balance growth and stability while considering ESG preferences.
 
-The goal of this analysis is to provide useful financial data that can support our AI agent's investment explanations.
-
 ## Data and Methods
 
-We used the financial datasets provided by the Datathon organizers, covering November 2021 to November 2026.
+We used the AlphaForge starter dataset provided by the Datathon organizers, covering November 2021 to November 2026.
 
-We started by checking missing values, duplicate records, and the available assets.
-
-We then selected four ETFs:
+We first checked the data for missing values and duplicate records. We then selected four ETFs:
 
 - **ESGV:** U.S. equity ETF with ESG screening
 - **SPY:** S&P 500 ETF
 - **QQQ:** Nasdaq-100 ETF
 - **AGG:** U.S. bond ETF
 
-Using Python, pandas, NumPy, and Matplotlib, we calculated:
-
-- Annualized historical returns
-- Annualized volatility
-- Maximum drawdown
-- Correlations between daily ETF returns
+Using Python, pandas, NumPy, and Matplotlib, we calculated annualized historical returns, annualized volatility, maximum drawdown, and correlations between daily ETF returns.
 
 ## Main Findings
 
-**1. Higher returns came with higher risk in our sample.**
+**1. QQQ had the highest return, but also the highest risk.**
 
-QQQ had the highest annualized return (12.49%), but also the highest volatility (23.36%) and largest maximum drawdown (35.12%).
+QQQ had an annualized return of 12.49%, volatility of 23.36%, and maximum drawdown of 35.12%.
 
 **2. ESG screening does not necessarily mean lower financial risk.**
 
-ESGV had an annualized return of 10.09% and volatility of 18.72%, compared with 11.68% and 17.33% for SPY.
+ESGV had slightly higher volatility than SPY (18.72% vs. 17.33%) during our analysis period.
 
-**3. Equity ETFs moved very similarly.**
+**3. The equity ETFs were highly correlated.**
 
-ESGV and SPY had a correlation of 0.99, while ESGV and QQQ had a correlation of 0.96. Combining highly correlated ETFs may provide limited additional diversification.
+ESGV and SPY had a correlation of 0.99, while ESGV and QQQ had a correlation of 0.96. This suggests that combining these ETFs may provide limited additional diversification.
 
-**4. Bonds may help with diversification.**
+**4. AGG may provide diversification benefits.**
 
-ESGV and AGG had a much lower correlation of 0.23. This suggests that combining equity and bond exposure could help reduce portfolio volatility.
+ESGV and AGG had a much lower correlation of 0.23. This suggests that combining stocks and bonds could help reduce overall portfolio volatility.
 
-## How This Supports Our AI Agent
-
-These results provide a starting point for evaluating investments based on an investor's goals and risk tolerance.
-
-For Mateo, the analysis helps us explore the trade-off between growth and stability.
-
-The AI agent can use these findings to explain investment risks and compare different options, rather than focusing only on historical returns.
 
 ## Limitations
 
-This analysis uses historical data and does not predict future market performance.
+Our analysis is based on historical data and does not predict future performance.
 
-Correlation can change over time, and lower volatility does not mean an investment is risk-free.
+Correlations can change over time, and lower volatility does not mean an investment is risk-free.
 
-ESGV follows an ESG screening approach, but additional information is needed to check whether an investment fully matches Mateo's preferences.
+ESG screening also does not guarantee that a fund matches every investor's preferences.
 
 ## Files
 
-- `financial_eda.ipynb` — Data exploration, risk metrics, correlation analysis, and portfolio comparison.
+- `financial_eda.ipynb` — Data exploration, ETF performance, risk metrics, and correlation analysis.
 
-The starter datasets are stored in the `data/` folder of the main repository.
+The original datasets are stored in the repository's `data/` folder.
