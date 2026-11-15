@@ -51,6 +51,23 @@ For our initial analysis, we selected four ETFs:
 
 These ETFs allow us to compare different types of investments and study the relationship between return, risk, and diversification.
 
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Amandaily-xx/alphaforge-ai.git
+   cd alphaforge-ai
+   ```
+
+2. **Install the required libraries**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the project**
+
+   Open `analysis/financial_eda.ipynb` in Jupyter Notebook or VS Code to view and run the financial analysis. Open `index.html` in a browser to view the demo interface.
+
 ## Initial Findings
 
 Our first analysis covers November 2021 to November 2026.
