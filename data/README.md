@@ -25,4 +25,4 @@ Our initial exploratory analysis is available in `analysis/financial_eda.ipynb`.
 
 ## Notes
 
-Datasets are provided for this competition. Historical performance does not guarantee future results.
+Datasets are provided for the 2026 Datathon PolyFinances. Historical performance does not guarantee future results.
