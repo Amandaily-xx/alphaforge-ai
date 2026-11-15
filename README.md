@@ -72,18 +72,6 @@ We are continuing to explore how combining different assets may help balance gro
 - GitHub
 - AWS (planned integration)
 
-## Project Structure
-
-```text
-alphaforge-ai/
-├── README.md
-├── data/          # Starter financial datasets
-├── analysis/      # EDA and financial risk analysis
-├── agents/        # AI agent development
-├── app/           # User interface
-└── docs/          # Project documentation
-```
-
 ## Limitations
 
 Our analysis is based on historical data, which does not guarantee future performance.
